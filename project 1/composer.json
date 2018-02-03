@@ -1,0 +1,28 @@
+{
+  "name": "jackdpeterson/udemy-phpunit-course",
+  "description": "Project #1",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Jack Peterson",
+      "email": "jack.peterson@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Project1\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Project1\\Test\\": "test/"
+    }
+  },
+  "scripts": {
+    "test": "phpdbg -qrr ./vendor/bin/phpunit -c ./phpunit.xml --bootstrap ./vendor/autoload.php"
+  },
+  "require": {
+    "phpunit/phpunit": "^7.0"
+  }
+}
